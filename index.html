@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" type="Icon" href="./img/f1Icon.ico"/>
+    <title>F1 cars</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #select {
+            text-align: center;
+            border-bottom: solid 1px ;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formula 1</h1>
+   
+        <select id="select">
+            
+            <option value="Red Bull">Red Bull</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="MCLaren">MCLaren</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Williams">Williams</option>
+            <option value="Kick">Kick Sauber</option>
+            <option value="Haas">Haas</option>
+            <option value="Alpine">Alpine</option>
+            <option value="RB">RB Visa Cash</option>
+        </select>
+        <div id="res"></div>
+
+
+    <script>
+        var select = document.getElementById('select')
+        var res = document.getElementById('res')
+        
+        select.addEventListener('click', () => {
+            res.innerHTML = select.value
+        })
+        
+    </script>
+</body>
+</html>
